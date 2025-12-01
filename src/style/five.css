@@ -1,0 +1,303 @@
+.main_five{
+      width: 100%;
+height: auto;
+background: linear-gradient(135deg, #111425 100%, #15311e 100%);
+margin-top: -56px;
+color: #fff;
+}
+.five_text h1{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    font-size: 5rem;
+}
+.five_text{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.five_text p{
+    font-size: 2.1rem;
+    margin-bottom: 0px;
+    width: 50%;
+    margin-top: 3px;
+    display: flex;
+    color: grey;
+    justify-content: center;
+    text-align: center;
+}
+.display_five{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.card {
+  width: 750px;
+  padding: 20px;
+  background: #111425;
+  border-radius: 12px;
+  border: 1px solid #2d2f40;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+.bar {
+  margin: 15px 0;
+}
+
+.bar span {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 14px;
+  color: #ccc;
+}
+
+.progress {
+  width: 100%;
+  height: 20px;
+  background: #222;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  border-radius: 10px;
+  transition: width 1s ease-in;
+}
+
+.facebook {
+  width: 80%; 
+  background: #1877f2;
+}
+.under{
+    background-color: #272a3d;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.instagram {
+  width: 65%;
+  background: linear-gradient(45deg, #f58529, #dd2a7b, #8134af);
+}
+
+.tiktok {
+  width: 40%;
+  background: black;
+}
+
+.snapchat {
+  width: 55%;
+  background: #fffc00;
+  color: black;
+}
+
+.growth {
+  margin-top: 20px;
+  color: #7CFC00;
+  font-size: 22px;
+  font-weight: bold;
+  animation:  zoom 2s infinite;
+}
+@keyframes zoom{
+  0%{transform: scale(1);}
+  30%{ transform:scale(1.04);}
+}
+.text_containe{
+    width: 700px;
+}
+.text_containe h1:hover{
+color: #7CFC00;
+}
+.editor{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    margin-top: 0px;
+    cursor: pointer;
+    margin-bottom: 0px;
+}
+.duration{
+    display: flex;
+    /* justify-content:center; */
+    justify-content: flex-start;
+    gap: 2rem;
+    width: 100%;
+    align-items: center;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.box_boder_design{
+    padding: 20px;
+  background: #111425;
+  border-radius: 19px;
+  border: 1px solid #2d2f40;
+  color: white;
+  width: 550px;
+  cursor: pointer;
+  font-family: Arial, sans-serif;
+}
+.box_boder_design:hover{
+    border: 2px solid greenyellow;
+animation: slideUp 1.2s ease-out forwards; 
+outline: none;
+}
+@keyframes slideUp {
+  0% {
+    transform: translateY(20px); 
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0); 
+    opacity: 1;
+  }
+}
+
+.under_design{
+    background-color: #272a3d;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.background{
+    width: 150px;
+    background-color:  #4b4e63;
+    height: 60px;
+    padding: 20px;
+    border-radius:10px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.display_color{
+    width: 100%;
+    display: flex;
+    gap: 1rem;
+}
+.red{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    width: 24px;
+    height: 20px;
+    border-radius: 4px;
+    background-color: red;
+}
+.yellow{
+     margin-top: 0px;
+    margin-bottom: 0px;
+    width: 24px;
+    height: 20px;
+    border-radius: 4px;
+    background-color: yellow;
+}
+.green{
+     margin-top: 0px;
+    margin-bottom: 0px;
+    width: 24px;
+    height: 20px;
+    border-radius: 4px;
+    background-color: greenyellow;
+}
+.orange{
+     margin-top: 0px;
+    margin-bottom: 0px;
+    width: 24px;
+    height: 20px;
+    border-radius: 4px;
+    background-color: orange;
+}
+.color_typro{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.width_input{
+    width: 100%;
+    background: gray;
+    height: 20px;
+    border-radius: 10px;
+}
+.width_input2{
+      width: 80%;
+    background: gray;
+    height: 20px;
+    border-radius: 10px;
+}
+.width_inputGreen{
+     width: 60%;
+    background: greenyellow;
+    height: 20px;
+    border-radius: 10px;
+}
+.design_tool_display{
+    width: 100%;
+    height: auto;
+    display:flex;
+    justify-content: space-around;
+    margin-top: 70px;
+}
+.five_green:hover{
+  color: greenyellow;
+}
+
+.graph_section{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+}
+.graph_section h1{
+  font-size: 5.8rem;
+  margin-bottom: 0px;
+}
+.graph_section p{
+  font-size: 2rem;
+  width: 50%;
+  color: grey;
+  margin-top: 0px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+.display_with_graph{
+  display: flex;
+  width: 100%;
+  gap: 1rem;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.approch{
+  font-size: 34px;
+  color: greenyellow;
+}
+.display_text_graph{
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  /* transition: transform 0.5s; */
+  cursor: pointer;
+}
+/* .display_text_graph:hover{
+  transform: translateX(20px);
+} */
+.text_only{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+.graph{
+  width: 50%;
+  max-width: 700px;
+  border: 1px solid greenyellow;
+  border-radius: 30px;
+}

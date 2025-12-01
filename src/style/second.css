@@ -1,0 +1,326 @@
+.main_container{
+width: 100%;
+height: 120vh;
+background: linear-gradient(135deg, #0c0f1f 0%, #0b1c10 100%);
+margin-top: -66px;
+color: #fff;
+display: flex;
+gap: 3rem;
+align-items: center;
+
+}
+.display_container{
+    width: 50%;
+    padding-left: 60px;
+    margin-top: 120px;
+    /* box-shadow: 0 0 20px #369636,
+0 0 60px #97d33e,
+0 0 100px #2696E8;
+animation: color 5s infinite; */
+}
+
+.display_container h1{
+    font-size: 6rem;
+    margin-bottom: 0px;
+}
+.display_container p{
+    font-size: 3.5rem;
+    color: grey;
+    font-weight: 700;
+    text-transform: lowercase;
+    margin-top: 0px;
+}
+
+.Sec_button{    
+    width: 100%;
+    align-items: center;
+    gap: 2rem;
+    display: grid;
+    grid-template-columns: 200px 200px 210px 250px; 
+}
+.Sec_button button{
+    width: 94%;
+    height: 7vh;
+    border-radius: 40px;
+    font-size: 24px;
+    cursor: pointer;
+    color: white;
+    border:4px solid green;
+    background-color: transparent;
+}
+.project button{
+    width: 25%;
+    /* font-size: 29px; */
+    border: none;
+    border-radius: 50px;
+    margin-top: 20px;
+    font-weight: 600;
+    background-color: greenyellow;
+}
+.project button {
+  /* font-size: 28px; */
+  border: none;
+  width: 13vw;
+  text-decoration: none;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-right: 20px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  /* font-weight: 600; */
+  background-color: #97d33e;
+  position: relative; 
+  overflow: hidden;   
+  z-index: 1;
+}
+
+.project button::before {
+  content: "";  
+  position: absolute;
+  inset: 0; 
+  border-radius: 10px;
+  padding: 2px;
+  background: linear-gradient(
+    115deg,
+    #4fcf70,
+    #ad8e0f,
+    #a767e5,
+    #12bcfe,
+    #44ce7b
+  );
+  background-size: 300% 100%;
+  z-index: -1; 
+  mask: 
+    linear-gradient(#fff 0 0) content-box, 
+    linear-gradient(#fff 0 0);
+  -webkit-mask: 
+    linear-gradient(#fff 0 0) content-box, 
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  animation: gradientMove 1.5s linear infinite;
+  animation-play-state: paused;
+}
+
+.project button:hover::before {
+  animation-play-state: running;
+}
+
+@keyframes gradientMove {
+  to {
+    background-position: -300% 0;
+  }
+}
+
+.project button {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.1rem;
+  border-radius: 10px;
+  height: 100%;
+  line-height: 45px;
+  z-index: 2;
+}
+.button_project_sec{
+    width: 39vw;
+    height: 8vh;
+    margin-top: 20px;
+    border: 2px solid green;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    text-align: center;
+    gap: 14px;
+    background-color: transparent;
+}
+.button_project_sec{
+    width: 43%;
+    height:100px;
+    background-color: #0c0f1f ;
+}
+.text h1{
+    font-size: 32px;
+    color: #ffff;
+}
+.text p{
+    margin-top: 20px;
+    font-size:22px;
+    color: grey;
+}
+.button50{
+    width: 100%;
+    height: auto;
+    display: flex;
+    margin-top: 30px;
+    align-items: center;
+    gap: 2rem;
+}
+.righ_side_box{
+    width:50%;
+    max-width: 37%;
+    height: auto;
+    border: 2px solid greenyellow;
+}
+/* .marquee{
+    display: flex;
+    gap: 3rem;
+    justify-content: center;
+}
+.marquee img{
+    margin-right: 20px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+.creator{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+} */
+.creator h1{
+    width: 35%;
+    height: 70%;
+    color: grey;
+     background-color: #0c0f1f ;
+    border: 2px solid greenyellow;
+}
+.creator span{
+    font-size: 4rem;
+    color: greenyellow;
+}
+/* .marquee2{
+    display: flex;
+    gap: 3rem;
+    justify-content: center;
+}
+.marquee2 img{
+    margin-right: 20px;
+    border-radius: 10px;
+    object-fit: cover;
+    direction: right;
+} */
+.creator{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.deliverd{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 50px;
+}
+.delived_block p{
+    font-size: 30px;
+}
+
+
+
+
+.marquee, .marquee2 {
+  overflow: hidden;
+  white-space: nowrap;
+  width: 100%;
+}
+
+.marquee-track {
+  display: flex;
+  width: max-content;
+  animation: scroll 25s linear infinite;
+}
+
+.marquee-track.reverse {
+  animation: scroll-reverse 25s linear infinite;
+}
+
+.marquee img, .marquee2 img {
+  width: 4vw;
+  height: 20vh;
+  object-fit: cover;
+  margin-right: 20px;
+  border-radius: 10px;
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes scroll-reverse {
+  from {
+    transform: translateX(-50%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+
+/* From Uiverse.io by nikk7007 */ 
+.Sec_button button {
+ --color: #00A97F;
+ --color2: rgb(10, 25, 30);
+ padding: 0.8em 1.75em;
+ background-color: transparent;
+ border-radius: 50px;
+ border: .3px solid greenyellow;
+ transition: .5s;
+ position: relative;
+ overflow: hidden;
+ cursor: pointer;
+ z-index: 1;
+ font-weight: 300;
+ font-size:18px;
+ font-family: 'Roboto', 'Segoe UI', sans-serif;
+ text-transform: uppercase;
+ color: white;
+}
+
+.Sec_button button::after, .Sec_button button::before {
+ content: '';
+ display: block;
+ height: 100%;
+ width: 100%;
+ transform: skew(90deg) translate(-50%, -50%);
+ position: absolute;
+ inset: 50%;
+ left: 25%;
+ z-index: -1;
+ transition: .5s ease-out;
+ background-color: yellowgreen;
+}
+
+.Sec_button button::before {
+ top: -50%;
+ left: -25%;
+ transform: skew(90deg) rotate(180deg) translate(-50%, -50%);
+}
+
+.Sec_button button:hover::before {
+ transform: skew(45deg) rotate(180deg) translate(-50%, -50%);
+}
+
+.Sec_button button:hover::after {
+ transform: skew(45deg) translate(-50%, -50%);
+}
+
+.Sec_button button:hover {
+ color: var(--color2);
+}
+
+.Sec_button button:active {
+ filter: brightness(.7);
+ transform: scale(.98);
+}

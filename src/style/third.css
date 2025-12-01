@@ -1,0 +1,159 @@
+.third_container{
+    width: 100%;
+height: 140vh;
+background: linear-gradient(135deg, #111425 0%, #15311e 100%);
+margin-top: -23px;
+color: #fff;
+}
+
+.card_container{
+    /* padding-left: 60px; */
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.card_container h1{
+    font-size: 3.9rem;
+    margin-bottom: 0px;
+}
+.card_container p{
+    font-size: 1.7rem;
+    color: gray;
+    margin-top: 0px;
+}
+.marquee3 marquee{
+     width: 100%;
+transition: transform 0.5s ease;
+}
+.marquee3 .marquee img{
+    margin-right: 20px;
+    border-radius: 20px;
+}
+
+.work{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.work h1{
+  font-size: 5rem;
+  margin-bottom: 0px;
+}
+.work p{
+  width: 50%;
+  font-size: 28px;
+  color: grey;
+  font-weight: 600;
+  display: flex;
+  text-align: center;
+margin-top: 0px;
+}
+.box_display{
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  animation: appear linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
+}
+.display{
+  width: 500px;
+  height: 300px;
+  border: 4px solid greenyellow;
+  padding: 20px;
+}
+.display_icon_text{
+  display: flex;
+  align-items: center;
+  gap: 2.2rem;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+/* chatgrpt  */
+
+@keyframes rotateOnScroll {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg);
+   }
+}
+
+.rotate-scroll {
+  opacity: 0; /* hidden before scroll */
+}
+
+.rotate-scroll.aos-animate {
+  opacity: 1;
+  animation: rotateOnScroll 1.5s linear;
+}
+
+
+.display_icon_text p{
+  font-size: 30px ;
+}
+.display p{
+  font-size: 40px;
+  margin-top: 0px;
+}
+.marquee3 {
+  overflow: hidden;
+  white-space: nowrap;
+  width: 100%;
+}
+/* Optional: Remove animation-timeline stuff */
+.box_display {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  flex-wrap: wrap; /* responsive */
+}
+.display {
+  width: 500px;
+  height: auto;
+  border: 4px solid greenyellow;
+  padding: 20px;
+}
+
+.marquee-track {
+  display: flex;
+  width: max-content;
+  animation: scroll 25s linear infinite;
+
+}
+
+.marquee-track img {
+  width: 20vw;
+  height: 25vh;
+  object-fit: cover;
+  cursor: pointer;
+  margin-right: 20px;
+  border-radius: 20px;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.marquee-track img:hover {
+  transform: scale(1.01); /* 10% zoom */
+  background: #0056b3;
+  border: 2px solid greenyellow;
+  /* box-shadow: 0px 3px 17px   greenyellow; */
+
+}
+ 
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
